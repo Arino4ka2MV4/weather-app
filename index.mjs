@@ -29,15 +29,15 @@ async function getWeather() {
     feels_like.innerHTML = `Ощущается как ${(data.main.feels_like - 273).toFixed(2)} C°`;
     switch (data.weather[0].main) {
         case 'Clouds':
-            weather_img.src = '/assets/cloud.svg';
+            weather_img.src = 'assets/cloud.svg';
             weather_description.textContent = 'Облачно';
             break;
         case 'Clear':
-            weather_img.src = '/assets/clear.svg';
+            weather_img.src = 'assets/clear.svg';
             weather_description.textContent = 'Ясно';
             break;
         case 'Rain':
-            weather_img.src = '/assets/rain.svg';
+            weather_img.src = 'assets/rain.svg';
             weather_description.textContent = 'Дождь';
             break;
         default:
