@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(305deg, rgba(168,125,179,1) 0%, rgba(94,94,244,1) 45%, rgba(0,212,255,1) 100%);
+    background-size: cover;
+}
+
+:root {
+    --index: 1vh + 1vw;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: calc(var(--index) * 1) calc(var(--index) * 7);
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: calc(50% - calc(var(--index) * 1) - calc(var(--index) * 14.5));
+    left: calc(50% - calc(var(--index) * 15));
+    height: calc(var(--index) * 35);
+    width: calc(var(--index) * 30);
+    border: 1px solid #dfdfdf;
+    border-radius: 16px;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 40px;
+}
+
+.city-select {
+    padding: calc(var(--index) * 0.01);
+    background: transparent;
+    margin-bottom: calc(var(--index) * 2);
+    border: 1px solid #dfdfdf;
+    color: white;
+    border-radius: 6px;
+}
+
+.temp {
+    color: white;
+    font-size: 2rem;
+}
+
+.feels_like {
+    color: white;
+    font-size: 1rem;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-img {
+    display: none;
+    width: 8rem;
+}
+
+.weather-description {
+    text-align: center;
+    margin-bottom: calc(var(--index) * 2);
+    color: white;
+    font-size: 3rem;
+}
