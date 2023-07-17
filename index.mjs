@@ -14,7 +14,7 @@ const weather_description = document.querySelector('.weather-description');
 }());
 
 async function getCoords() {
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${select.value}&appid=${params.apiKey}`);
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${select.value}&appid=${params.apiKey}`);
     const data = await response.json();
     return data[0];
 }
